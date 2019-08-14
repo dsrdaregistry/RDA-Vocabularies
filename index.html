@@ -233,6 +233,20 @@
  </footer>
 </div>
 <!-- Scripts--> 
+<script type="text/javascript">
+window.onload = function(){
+   console.log("window onload function running");
+   var targetProtocol = "http:"; 
+
+   if (window.location.protocol != targetProtocol) {
+      console.log(targetProtocol);
+      console.log(window.location.href.substring(window.location.protocol.length));
+      window.location = targetProtocol + window.location.href.substring(window.location.protocol.length); 
+   }
+
+
+}
+</script>
 <!-- InstanceBeginEditable name="Scripts" -->
 <script defer src="/bower_components/jquery/dist/jquery.js">
 </script>
@@ -240,18 +254,7 @@
 </script>
 <script defer src="/bower_components/modernizr/modernizr.js">
 </script>
-<script type="text/javascript">
-window.onload = function(){
-   console.log("window onload function running");
-   var targetProtocol = "http:"; 
 
-   if (window.location.protocol != targetProtocol) {
-      window.location = targetProtocol + window.location.href.substring(window.location.protocol.length); 
-   }
-
-
-}
-</script>
 
 <!-- InstanceEndEditable -->
 </body>
