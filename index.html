@@ -241,7 +241,8 @@ window.onload = function(){
    if (window.location.protocol != targetProtocol) {
       console.log(targetProtocol);
       console.log(window.location.href.substring(window.location.protocol.length));
-      window.location = targetProtocol + window.location.href.substring(window.location.protocol.length); 
+      var fullPath = targetProtocol + window.location.href.substring(window.location.protocol.length);
+      location.replace(fullPath);
    }
 
 
