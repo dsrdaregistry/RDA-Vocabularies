@@ -240,6 +240,12 @@
 </script>
 <script defer src="/bower_components/modernizr/modernizr.js">
 </script>
+<script type="text/javascript">
+var targetProtocol = "http:";
+if (window.location.protocol != targetProtocol)
+ window.location.href = targetProtocol +
+  window.location.href.substring(window.location.protocol.length);
+</script>
 
 <!-- InstanceEndEditable -->
 </body>
