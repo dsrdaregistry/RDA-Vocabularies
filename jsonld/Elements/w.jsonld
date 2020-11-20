@@ -3,6 +3,7 @@
     "@graph": [
         {
             "@id": "http://rdaregistry.info/Elements/w/",
+            "@type": "ElementSet",
             "title": {"en": "RDA Work properties"},
             "description": {"en": "Properties derived from RDA elements with the domain of RDA Work."}
         },
